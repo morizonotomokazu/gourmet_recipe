@@ -1,0 +1,41 @@
+<%# トップページ %>
+<%= render "shared/header" %>
+<div class='main'>
+  <div class="contents-row">
+    <%= image_tag 'recipe.jpeg' , class: "purchase-btn-icon" %>
+    <%= image_tag 'recipe2.jpeg' , class: "purchase-btn-icon" %>
+  </div>
+  <div class="contents-roz">
+    <%= image_tag 'recipe4.jpeg' , class: "purchase-btn-icon" %>
+    <%= image_tag 'recipe5.jpeg' , class: "purchase-btn-icon" %>
+  </div>
+  <div class="contents-foot">
+    <%= image_tag 'recipe3.png' , class: "purchase-btn-icon" %>
+  </div>
+      
+  <div class='recipe-contents'>
+      <h2 class='recipe-title'>Recipe投稿一覧</h2>
+      <%= link_to '新規Recipe投稿', new_recipe_path, class: "subtitle" %>
+    <ul class='recipe-lists'>
+      <% @recipes.each do |recipe| %> 
+        <li class='list'>
+         <%= link_to recipe_path(recipe.id) do %>
+            <div class='recipe-img-content'>
+                 <%= image_tag recipe.image.variant(resize: '500x500'), class: 'recipe-image' %>
+            </div>
+            <div class='recipe-info'>
+              <h3 class='category-name'>
+                <%= recipe.category.name %>
+              </h3>
+              <h3 class='recipe-name'>
+                <%= recipe.recipe_name %>
+              </h3>
+            </div> 
+        </li>
+      <% end %>
+      <% end %>
+    </ul>
+  </div>
+  
+</div>
+  <%= render "/shared/footer" %>

@@ -1,0 +1,14 @@
+
+.error-message {
+  font-size: 1.3vw;
+  list-style: circle;
+  color: #068a0dc5;
+  
+}
+
+.error-alert {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+  font-family : Arial,'HiraMinProN-W6',sans-serif ;
+}

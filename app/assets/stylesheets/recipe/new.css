@@ -1,0 +1,92 @@
+.click-upload {
+  margin: 15px 0;
+  min-width: 250px;
+}
+
+.back-btn {
+  width: 54px;
+  padding: 0 6px;
+  margin-right:14px;
+  text-decoration: none;
+  background-color:  #57C3E9;
+  color:rgb(244, 244, 242);
+  border-radius:30px;
+  border: 3px solid#08080826;
+  font-size: 17px
+}
+.select-box {
+  width: 271px;
+  height: 30px;
+}
+
+.recipes-text{
+  width: 240px;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+.s-text {
+  height: 250px;
+  width: 240px;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.img-upload {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.weight-bold-text {
+  font-weight: bold;
+  min-width: 170px;
+  margin-bottom: 10px;
+}
+
+.click-upload {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 250px;
+}
+
+.click-upload>p {
+  margin-bottom: 15px;
+}
+
+.sell-btn {
+  width: 86px;
+  background-color: #57C3E9;
+  color:rgb(244, 244, 242);
+  border-radius:30px;
+  border: 3px solid#08080826;
+  font-size: 17px;
+  cursor:pointer;
+}
+.sell-btn-contents {
+  margin-top: 25px;
+  width: 243px;
+  display: flex;
+  justify-content: center;
+}
+
+.f-wrap {
+  width: 50%;
+  background-color: rgb(220, 242, 208);
+  padding-bottom: 70px;
+  font-family : Arial,'HiraMinProN-W6',sans-serif ;
+}
+.f-main {
+  width: 276px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#recipe-image{
+  width: 291px;
+}

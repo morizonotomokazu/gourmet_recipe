@@ -1,0 +1,17 @@
+<header class= 'header-lists'>
+<%= link_to "GOURMET RECIPE", "/",class: "title" %>
+  <ul class='lists-right'>
+    <% if user_signed_in? %>
+      <%# <li><%= link_to current_user.nickname, "/", class: "user-nickname" %></li> 
+            
+      <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete,class: "logout" %></li>
+           
+      <li><%= link_to "投稿する", new_recipe_path, class: "post" %></li>
+  </ul>      
+    <% else %>
+  <ul class='lists'> 
+      <li><%= link_to "ログイン", new_user_session_path, class: "login" %></li>     
+      <li><%= link_to "新規登録", new_user_registration_path, class: "sign-up" %></li>
+    <% end %>
+  </ul>
+</header>

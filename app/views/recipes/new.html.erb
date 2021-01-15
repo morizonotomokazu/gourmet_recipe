@@ -1,0 +1,80 @@
+<div class="registration-main">
+  <header class="recipes-sell-header">
+    <%# 画像を入れたい %>
+
+  </header>
+
+  <div class="f-wrap">
+      <div class="form-header">
+       <h1 class="form-header-text">レシピ情報入力</h1>
+      </div>
+    <div class="f-main">
+      <%= form_with model: @recipe, local: true do |f| %>
+         <%# エラー表示 %>
+      <%= render 'shared/error_messages', model: f.object %>
+         <%# エラー表示 %>
+
+         <%# 投稿画像 %>
+        <div class="img-upload">
+          <div  class="weight-bold-text">
+             投稿画像
+            <span  class="indispensable">必 須</span>
+          </div>
+          <div class="click-upload">
+            <p>
+              ファイルを アップロード
+            </p>
+            <%= f.file_field :image,  id:"recipe-image" %>
+          </div>
+        </div>
+        <%# /投稿画像 %>
+
+        <%# レシピ説明 %>
+        <div class="new-recipes">
+          <div class="form">
+            <div class="weight-bold-text">
+               種類
+              <span class="indispensable">必須</span>
+            </div> 
+             <%= f.collection_select(:category_id , Category.all, :id, :name, {},  {class:"select-box", id:"recipe-category"}) %>
+          </div> 
+          <div  class="weight-bold-text">
+              料理名
+            <span  class="indispensable">必 須</span>
+          </div>
+            <%= f.text_area :recipe_name,   class:"recipes-text",  id:"recipe-name",   placeholder:"料理名(例)スパイシーチキン",   maxlength:"40" %>
+          <div class="items-explain">
+            <div  class="weight-bold-text">
+               材料
+              <span  class="indispensable"> 必須</span>
+            </div>
+              <%= f.text_area :material,  class:"s-text",   id:"recipe-info",  placeholder:"材料(例)3～4人分
+鶏スペアリブ(手羽中を半分にしたもの)  12本
+塩、こしょう                    各少々
+
+A 
+トマトケチャップ           大さじ2
+しょうゆ                         大さじ1
+酒                                  大さじ1/2
+ごま油                           大さじ1/2"  , rows:"7" , maxlength:"2000" %>
+            <div  class="weight-bold-text">
+                作り方
+              <span  class="indispensable"> 必須</span>
+            </div>
+               <%= f.text_area :recipe_text,  class:"s-text",   id:"recipe-info",  placeholder:"作り方(例)
+鶏スペアリブは余分な水気をキッチンペーパーで除き、塩・こしょうをもみこみ約10分おく。
+
+Aと鶏スペアリブをビニール袋に入れてもみ込み、約20分おく。" ,  rows:"7" , maxlength:"2000" %>
+          </div>
+        </div>
+        <%# 下部ボタン %>
+        <div class="sell-btn-contents">
+          
+          <%=link_to 'もどる', root_path,  class:"back-btn"  %>
+          <%= f.submit "出品する" ,class:"sell-btn" %>
+        </div>
+        <%# /下部ボタン %>
+      </div>
+    <% end %>
+  </div>
+</div>
