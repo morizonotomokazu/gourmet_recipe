@@ -2,7 +2,7 @@
 # README
 
 # アプリケーション名
-- Gourmet-Recipe
+ [Gourmet-Recipe](https://gourmet-recipe-32457.herokuapp.com/)
 
 # アプリケーション概要
 - ログイン、ログアウト
@@ -13,7 +13,7 @@
 - レシピ削除
 - レシピコメント
 
-# URL
+
 
 # テスト用アカウント
 ## Basic認証
