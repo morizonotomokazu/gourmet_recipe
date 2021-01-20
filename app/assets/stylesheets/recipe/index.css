@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 800px;
   height: 100%;
-  background-color: #f5f5f5;
+  
   display: flex;
   justify-content: center;
 }
@@ -30,7 +30,7 @@
 .contents-row {
   display: flex;
     justify-content: space-around;
-    margin-top: 55px;
+   
 }
 .contents-roz {
   display: flex;
@@ -44,14 +44,14 @@
 }
 .form-wrap {
   width: 50%;
-  background-color: rgb(220, 242, 208);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
   padding-bottom: 70px;
   font-family : Arial,'HiraMinProN-W6',sans-serif ;
 }
 
 .form-login{
   width: 50%;
-  background-color: rgb(220, 242, 208);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
   padding-bottom: 70px;
   margin-left: 25%;
   font-family : Arial,'HiraMinProN-W6',sans-serif ;
@@ -90,18 +90,17 @@ ul {
     padding-inline-start: 40px;
  }
 
-footer {
-  height: 50px;
-  background-color: #f0f0f0;
- }
-
 .login-flash-message {
   text-align: center;
   color: rgb(187, 121, 121);
 }
 
 .recipe-contents {
-  margin: 20px 10px;
+  position: absolute;
+  top: 63%;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .recipe-title {
@@ -122,9 +121,11 @@ footer {
   justify-content: center;
 }
 .recipe-lists {
-  margin-left:5%;
-  margin-right:5%;
-  flex-direction:row;
+  position:absolute;
+  margin: 6% 5%;
+  
+ 
+  
   display: flex;
   justify-content:space-around;
   
@@ -135,16 +136,23 @@ footer {
  
 }
 .recipe-image{
-  width:200px;
-  height:200px;
+  width:300px;
+  height:300px;
   object-fit:cover;
   border-radius:50%;
+  position: relative;
 }
 .category-name{
   display: flex;
   justify-content:center;
+  position: relative;
 }
 .recipe-name{
   display: flex;
   justify-content:center;
+  position: relative;
+}
+
+.registration-mains{
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }

@@ -1,4 +1,4 @@
-<%= render "shared/header" %>
+
 <%# レシピの詳細ページ %>
 <div class="recipe-show">
   <div class="recipe-box">
@@ -37,12 +37,13 @@
       <% if user_signed_in? %>
         <%= form_with(model: [@recipe, @comment],  local:  true) do |f| %>
          <div class="container-com">
+            <%= render 'shared/error_messages', model: f.object %>
             <%= f.text_area :text,class:"comment-a", placeholder: "コメントする", rows: "2" %>
             <%= f.submit "SEND",class:"comment-btn" %>
           </div>
         <% end %>
       <% else %>
-        <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+        <strong><p>※ コメントの投稿には新規登録/ログインが必要です ※</p></strong>
       <% end %>
       <div class="comments">
         <h4>＜コメント一覧＞</h4>
@@ -54,7 +55,7 @@
         <% end %>
       </div>
     </div>
+    <%=link_to 'もどる', root_path ,class:"back-btn"%>
   </div>  
 </div>
-
 <%= render "shared/footer" %>

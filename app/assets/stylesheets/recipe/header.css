@@ -1,16 +1,14 @@
 .header-lists{
-background-color:rgb(255, 255, 253);
-margin: 5px 5px;   
-border: 2px 2px;
-padding: 2px 2px;
+  position: relative;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 
 .lists-right {
-  margin-left: auto;
+  margin-left: auto; 
   display: flex;
   align-items: flex-end;
   list-style: none;
-  width: 215px;
+  width: 215px; 
 }
 
 .lists{
@@ -31,11 +29,12 @@ padding: 2px 2px;
 }
 
 .post {
+
+  position:relative; 
   font-family : Arial,'HiraMinProN-W6',sans-serif;
   margin: 2px 7px;
   padding: 2px 7px;
   text-decoration: none;
-  background-color:  #fafeff;
   color:rgb(5, 17, 68);
   border-radius:30px;
   border: 3px solid#08080827;
@@ -48,7 +47,7 @@ padding: 2px 2px;
   margin: 2px 7px;
   padding: 2px 7px;
   text-decoration: none;
-  background-color:  #fafeff;
+  
   color:rgb(5, 17, 68);
   border-radius:30px;
   border: 3px solid#08080827;
@@ -81,8 +80,10 @@ padding: 2px 2px;
   font-size: 16px
 }
 
-.title{
-  margin-left: 10px;
+.text{
+  display: flex;
+  justify-content: center;
+  position: relative; 
   text-decoration: none;
   font-family: cursive;
   font-size: 50px;
@@ -100,8 +101,8 @@ padding: 2px 2px;
 }
 
 .login-red-btn{
-  background-color:  #57C3E9;
-  color:rgb(244, 244, 242);
+  cursor:  linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
   font-size: 15px;
   border: 2px solid#08080826;
   cursor:pointer;
@@ -117,4 +118,8 @@ padding: 2px 2px;
  margin: 5px 5px;   
  border: 2px 2px;
  padding: 2px 2px;
+}
+
+.footer-ls{
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }

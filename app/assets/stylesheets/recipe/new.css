@@ -8,8 +8,7 @@
   padding: 0 6px;
   margin-right:14px;
   text-decoration: none;
-  background-color:  #57C3E9;
-  color:rgb(244, 244, 242);
+  cursor:  linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   border-radius:30px;
   border: 3px solid#08080826;
   font-size: 17px
@@ -62,8 +61,7 @@
 
 .sell-btn {
   width: 86px;
-  background-color: #57C3E9;
-  color:rgb(244, 244, 242);
+  color:  linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   border-radius:30px;
   border: 3px solid#08080826;
   font-size: 17px;
@@ -78,7 +76,7 @@
 
 .f-wrap {
   width: 50%;
-  background-color: rgb(220, 242, 208);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
   padding-bottom: 70px;
   font-family : Arial,'HiraMinProN-W6',sans-serif ;
 }
@@ -89,4 +87,8 @@
 }
 #recipe-image{
   width: 291px;
+}
+
+.registration-main{
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
