@@ -30,9 +30,11 @@ ja:
       recipe:
           image: 投稿画像
           recipe_text: 作り方
-          category_id: カテゴリー
+          category_id: 種類
           material: 材料
-          recipe_name: 料理名  
+          recipe_name: 料理名 
+      comment:
+          text: コメント
     models:
       user: ユーザー
   devise:
