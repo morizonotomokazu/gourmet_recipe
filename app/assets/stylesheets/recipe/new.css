@@ -91,3 +91,10 @@
 .registration-main{
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
+
+fieldset,
+img {
+  border:0;
+  height:200px ;
+  width: 200px;
+}
